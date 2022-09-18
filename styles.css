@@ -175,7 +175,7 @@ main {
 }
 
 .project {
-    height:14rem;
+    height:auto;
     background-color: blue;
     display: grid;
     align-content: start;
@@ -193,9 +193,10 @@ main {
 }
 
 .project > div {
+    height: auto;
+    margin-right: 10px;
     justify-self: end;
     align-self: end;
-    margin-right: 5px;
 }
 
 .project > div > img {
