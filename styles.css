@@ -36,7 +36,10 @@ main {
     display: grid;
     grid-template-columns: 3fr 1.2fr;
     background-color: black;
+    position: relative;
 }
+
+
 
 /* sidebar nested elements*/
 
@@ -167,18 +170,26 @@ main {
 }
 
 /* main nested elements */
+main > h3 {
+    color: white;
+    position: absolute;
+    top: 0.9rem;
+    left: 1.25rem;
+}
+
 #projects {
-    margin: 0  10px;
+    margin: 3rem  1rem 1rem 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    gap: 10px;
+    gap: 1rem;
 }
 
 .project {
     height:auto;
-    background-color: blue;
+    background: grey;
     display: grid;
     align-content: start;
+    border-radius: 1rem;
 }
 
 .project > h3 {
@@ -202,3 +213,38 @@ main {
 .project > div > img {
     height: 2rem;
 } 
+
+/* Announcements and trending */
+
+#announcements-trending {
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#announcements {
+    margin-top: 3rem;
+    margin-right: 1.1rem;
+    background-color: orange;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+}
+
+#announcements > div {  
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    margin: 0 20px;
+}
+
+#announcements > div > p {
+    font-size: 0.8rem;
+}
+
+.seperator {
+    height: 1px;
+    width: 80%;
+    justify-self: center;
+    background-color: black;
+}
