@@ -238,6 +238,16 @@ main > h3 {
     margin: 0 20px;
 }
 
+#announcements > div:first-of-type {
+    position: relative;
+    top: 12%;
+}
+
+#announcements > div:last-of-type {
+    position: relative;
+    bottom: 10%;
+}
+
 #announcements > div > p {
     font-size: 0.8rem;
 }
